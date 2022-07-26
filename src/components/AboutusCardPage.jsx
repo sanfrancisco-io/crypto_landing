@@ -4,7 +4,7 @@ import React from 'react';
 const AboutusCardPage = () => {
   return (
     <>
-      <div className='mt-[180px] grid grid-cols-3 grid-rows-2 gap-[30px] md:grid-cols-1 md:justify-items-center'>
+      <div className='pb-8 mt-[180px] grid grid-cols-3 grid-rows-2 gap-[30px] md:grid-cols-1 md:justify-items-center'>
         <motion.div
           initial='hidden'
           whileInView='visible'
