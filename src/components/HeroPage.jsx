@@ -1,6 +1,7 @@
 import React from 'react';
 
 import tradingSchema from '../assets/trading_schema.svg';
+import mobileTradingSchema from '../assets/mobile_hero_schema.svg';
 import buttonEllipse from '../assets/button_ellipse.svg';
 
 const HeroPage = () => {
@@ -32,10 +33,17 @@ const HeroPage = () => {
             </a>
           </div>
         </div>
-        <div className='mt-20 md:flex justify-end md:translate-x-[100px]'>
+        <div className='mt-20 md:hidden justify-end'>
           <img
             className='sm:w-[400px]'
             src={tradingSchema}
+            alt='trading schema'
+          />
+        </div>
+        <div className='mt-20 hidden md:flex justify-end'>
+          <img
+            className='sm:w-[400px]'
+            src={mobileTradingSchema}
             alt='trading schema'
           />
         </div>
