@@ -18,7 +18,7 @@ const HeroPage = () => {
             <span>Engineers Meet</span> <br />
             <span className='text-gradient'>Traders __</span>
           </div>
-          <div className='md:text-center'>
+          <div className='md:text-center  md:px-4'>
             <span className='text-[25px] font-normal sm:text-[18px] sm:leading-[25px]'>
               Advanced crypto algorithmic trading and efficient <br />{' '}
               cross-chain execution, at scale.

@@ -108,6 +108,9 @@
   .custom-responsive-image {
     justify-content: start !important;
   }
+  .custom_responsive_container {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
