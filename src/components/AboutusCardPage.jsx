@@ -1,10 +1,21 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const AboutusCardPage = () => {
   return (
     <>
       <div className='mt-[180px] grid grid-cols-3 grid-rows-2 gap-[30px] md:grid-cols-1 md:justify-items-center'>
-        <div className='flex justify-end  flex-col row-span-2	items-start px-8 md:py-8 h-full big-bg-card rounded-[46px] border-4 border-[#3d3e42] md:h-[476px] md:w-[350px] md:justify-start'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, x: -200 },
+          }}
+          className='flex justify-end  flex-col row-span-2	items-start px-8 md:py-8 h-full big-bg-card rounded-[46px] border-4 border-[#3d3e42] md:h-[476px] md:w-[350px] md:justify-start'
+        >
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Spot & Margin
@@ -21,9 +32,19 @@ const AboutusCardPage = () => {
               <button>Learn more</button>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className='px-[30px] py-[30px] col-span-1 rounded-[46px] border-4 border-[#3d3e42] md:h-[305px] md:w-[350px]'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: -100 },
+          }}
+          className='px-[30px] py-[30px] col-span-1 rounded-[46px] border-4 border-[#3d3e42] md:h-[305px] md:w-[350px]'
+        >
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Derivatives
@@ -42,9 +63,19 @@ const AboutusCardPage = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className='px-[30px] col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[305px] md:w-[350px]'>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: -100 },
+          }}
+          className='px-[30px] col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[305px] md:w-[350px]'
+        >
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Trading Arena
@@ -65,8 +96,18 @@ const AboutusCardPage = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className='bg-small-card px-[30px] col-span-2 md:col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[426px] md:w-[350px]'>
+        </motion.div>
+        <motion.div
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          className='bg-small-card px-[30px] col-span-2 md:col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[426px] md:w-[350px]'
+        >
           <div>
             <span className='font-medium text-base  text-[#AAAAAA] uppercase'>
               mobile app
@@ -87,7 +128,7 @@ const AboutusCardPage = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
