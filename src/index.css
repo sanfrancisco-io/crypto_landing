@@ -30,7 +30,7 @@
     box-sizing: border-box;
     color: #f3f3f3;
     font-family: 'Mazzard', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 }
 

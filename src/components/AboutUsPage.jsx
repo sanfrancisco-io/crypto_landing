@@ -21,8 +21,8 @@ const AboutUsPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -500 },
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
           }}
           className='mt-[143px] sm:mt-[80px] mb-10'
         >
@@ -53,8 +53,8 @@ const AboutUsPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: 500 },
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className='w-1/2  md:w-full'
           >
@@ -94,8 +94,8 @@ const AboutUsPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               variants={{
-                visible: { opacity: 1, x: 1 },
-                hidden: { opacity: 0, x: 500 },
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
               }}
               className='font-medium text-[40px] md:text-[35px] leading-[120%]'
             >
@@ -114,8 +114,8 @@ const AboutUsPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: 500 },
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
               }}
               className='my-5'
             >

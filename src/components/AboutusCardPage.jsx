@@ -11,8 +11,8 @@ const AboutusCardPage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           variants={{
-            visible: { opacity: 1, x: 0 },
-            hidden: { opacity: 0, x: -200 },
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
           }}
           className='flex justify-end  flex-col row-span-2	items-start px-8 md:py-8 h-full big-bg-card rounded-[46px] border-4 border-[#3d3e42] md:h-[476px] md:w-[350px] md:justify-start'
         >

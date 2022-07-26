@@ -16,8 +16,8 @@ const HeroPage = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
               variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: -100 },
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
               }}
               className='uppercase text-[19px] md:text-center'
             >
@@ -44,8 +44,8 @@ const HeroPage = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             variants={{
-              visible: { opacity: 1, x: 0 },
-              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
             }}
             className='md:text-center  md:px-4'
           >
