@@ -3,8 +3,8 @@ import React from 'react';
 const AboutusCardPage = () => {
   return (
     <>
-      <div className='mt-[180px] grid grid-cols-3 grid-rows-2 gap-[30px]'>
-        <div className='flex justify-end flex-col ozo row-span-2	items-start px-8 h-full big-bg-card rounded-[46px] border-4 border-[#3d3e42]'>
+      <div className='mt-[180px] grid grid-cols-3 grid-rows-2 gap-[30px] md:grid-cols-1'>
+        <div className='flex justify-end flex-col row-span-2	items-start px-8 h-full big-bg-card rounded-[46px] border-4 border-[#3d3e42] md:h-[476px]'>
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Spot & Margin
@@ -23,7 +23,7 @@ const AboutusCardPage = () => {
           </div>
         </div>
 
-        <div className='px-[30px] py-[30px] col-span-1 rounded-[46px] border-4 border-[#3d3e42]'>
+        <div className='px-[30px] py-[30px] col-span-1 rounded-[46px] border-4 border-[#3d3e42] md:h-[305px]'>
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Derivatives
@@ -44,7 +44,7 @@ const AboutusCardPage = () => {
           </div>
         </div>
 
-        <div className='px-[30px] col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42]'>
+        <div className='px-[30px] col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[305px]'>
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               Trading Arena
@@ -66,7 +66,7 @@ const AboutusCardPage = () => {
             </div>
           </div>
         </div>
-        <div className='px-[30px] col-span-2 py-[30px] h-[358px] rounded-[46px] border-4 border-[#3d3e42]'>
+        <div className='bg-small-card px-[30px] col-span-2 md:col-span-1 py-[30px] rounded-[46px] border-4 border-[#3d3e42] md:h-[426px]'>
           <div>
             <span className='font-medium text-base text-[#AAAAAA] uppercase'>
               mobile app

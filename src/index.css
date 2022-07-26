@@ -80,6 +80,11 @@
   background-repeat: no-repeat;
   background-position: top;
 }
+.bg-small-card {
+  background-image: url('../public/small_bg_footer_card.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
 
 .card-bg-gradient {
   background: linear-gradient(89.95deg, #487fff, #73b5ff, #cb76ff);
