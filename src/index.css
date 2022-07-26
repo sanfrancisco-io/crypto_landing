@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mazzard';
+  src: local('Mazzard'),
+    url(./MazzardFont/MazzardM-Regular.woff) format('truetype');
+  font-weight: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Mazzard;
+  src: local('Mazzard'),
+    url(./MazzardFont/MazzardM-Medium.woff) format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Mazzard;
+  src: local('Mazzard'),
+    url(./MazzardFont/MazzardM-SemiBold.woff) format('truetype');
+  font-weight: 600;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #131213;
+    box-sizing: border-box;
+    color: #f3f3f3;
+    font-family: 'Mazzard', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.bg-hero {
+  background-image: url('../public/hero_background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-hero {
+    padding: 0px 0;
+    padding-top: 50px;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(89.95deg, #487fff, #73b5ff, #cb76ff 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg_aboutus {
+  background-image: url('../public/aboutus_bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-button-gradient {
+  background: linear-gradient(140.6deg, #3e6ff9 -27.18%, #3e53f8 126.06%);
+  box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+  border-radius: 10px;
+}
+
+.aboutus-gb-gradient {
+  background: linear-gradient(89.95deg, #487fff, #73b5ff, #cb76ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.big-bg-card {
+  background-image: url('../public/big_bg_footer_card.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.card-bg-gradient {
+  background: linear-gradient(89.95deg, #487fff, #73b5ff, #cb76ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .custom-responsive-sm {
+    width: 100% !important;
+  }
 }
