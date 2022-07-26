@@ -56,7 +56,7 @@ const AboutUsPage = () => {
           <div className='w-1/2 mr-12 md:hidden'>
             <img src={aboutusSchema} alt={'aboutus Schema'} />
           </div>
-          <div className='w-1/2 md:w-4/5 custom-responsive-sm'>
+          <div className='w-1/2 md:w-full custom-responsive-sm md:text-center sm:text-left'>
             <div className='font-medium text-[40px] md:text-[35px] leading-[120%]'>
               <span>
                 The future{' '}
@@ -80,7 +80,7 @@ const AboutUsPage = () => {
                 </button>
               </a>
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:flex md:justify-center custom-responsive-image'>
               <img src={mobileAboutusSchema} alt='responsive schema' />
             </div>
           </div>
