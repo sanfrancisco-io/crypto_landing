@@ -63,37 +63,10 @@ const HeroPage = () => {
             </a>
           </div>
         </div>
-        <motion.div
-          initial='hidden'
-          whileInView='visible'
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
-          className='mt-20 md:hidden justify-end'
-        >
+        <div className='mt-20 flex justify-end md:justify-center'>
           <img
-            className='sm:w-[400px]'
+            className='sm:w-[350px]'
             src={tradingSchema}
-            alt='trading schema'
-          />
-        </motion.div>
-        <div
-          initial='hidden'
-          whileInView='visible'
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
-          className='mt-20 hidden md:flex justify-end'
-        >
-          <img
-            className='sm:w-[400px]'
-            src={mobileTradingSchema}
             alt='trading schema'
           />
         </div>
