@@ -80,7 +80,7 @@ const HeroPage = () => {
             alt='trading schema'
           />
         </motion.div>
-        <motion.div
+        <div
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true }}
@@ -96,7 +96,7 @@ const HeroPage = () => {
             src={mobileTradingSchema}
             alt='trading schema'
           />
-        </motion.div>
+        </div>
       </div>
       <div className='flex justify-center items-center md:hidden'>
         <a href={'/'}>

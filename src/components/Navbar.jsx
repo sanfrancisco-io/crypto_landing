@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import navbarArrow from '../assets/nav_arrow.svg';
-import burgerMenu from '../assets/burger.svg';
+import { MenuButton } from './BurgerManu';
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className='container mx-auto flex py-4 justify-between items-center custom_responsive_container'>
       <a
@@ -34,9 +35,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className='hidden md:flex'>
-        <button>
-          <img src={burgerMenu} alt='burger' />
-        </button>
+        <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} />
       </div>
     </div>
   );
