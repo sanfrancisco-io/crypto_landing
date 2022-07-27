@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import tradingSchema from '../assets/trading_schema.svg';
-import mobileTradingSchema from '../assets/mobile_hero_schema.svg';
+import tradingSchema from '../assets/Group 133.svg';
 import buttonEllipse from '../assets/button_ellipse.svg';
 
 const HeroPage = () => {
